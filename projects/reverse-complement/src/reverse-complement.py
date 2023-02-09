@@ -1,11 +1,12 @@
-'''
+G'''
+
 NAME
 	reverse-complement.py
     
 VERSION
     1.0
     
-AUTHOR
+AUTHOR  Ethan Marcos Galindo Raya
 	
     
 DESCRIPTION
