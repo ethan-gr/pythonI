@@ -1,11 +1,12 @@
-'''
+G'''
+
 NAME
 	reverse-complement.py
     
 VERSION
-    1.0
+    1.1
     
-AUTHOR
+AUTHOR  Ethan Marcos Galindo Raya
 	
     
 DESCRIPTION
@@ -14,7 +15,7 @@ DESCRIPTION
 CATEGORY
 	Genomic Sequence
     
-USAGE
+USAGE	example
 
     % python reverse-complement.py -i 
     
