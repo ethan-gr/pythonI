@@ -30,8 +30,12 @@ _Ventajas de ser parte Github_
 - (Trabajo en equipo)
 - Respaldar codigo
 
-#### La estructura d ecarpetas d ecada proyecto es 
-- docs
-- lib
-- src
-- test
+#### La estructura d ecarpetas d ecada proyecto es:
+
+```
+proyect
+├───doc
+├───lib
+├───src
+└───test
+```

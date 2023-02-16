@@ -21,11 +21,15 @@ Es una mala idea tener repositorios anidados dentro de
 	
 `git status`:
 	Lo que hace es indicarnos el estado de los elementos en la carpeta que estamos, nos atuda a visualizar com estamos haciendo los comandos y como van  los archivos
+	`git status -u`:
+		Este le dice a git que busque los archivos dentro del init inclusive  si no le hemos indicado a git que lo controle.
 	
 `git log`:
 	Es una lista de los commits que se llevaron a cabo.
 	`git log -n`:
 		donde n es un numero, esto muestroa los ultimos n comentarios
+ `checkout`:
+	 Es la manera de regresar a una de las versiones anteriores, se le da el identificador que condeguimos con `log --oneline` y el nombre del archivo
 
 #### Ramas en Git
 No son algo que veremos pero es una caracterristica importante de Github porque lo que permite es para ir modificando los camnbios de manera acoplada.
