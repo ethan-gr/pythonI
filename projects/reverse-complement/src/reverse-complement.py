@@ -5,7 +5,8 @@ NAME
 VERSION
     1.0
     
-AUTHOR
+AUTHOR 
+	Ethan M. Galindo
 	
     
 DESCRIPTION
@@ -14,7 +15,7 @@ DESCRIPTION
 CATEGORY
 	Genomic Sequence
     
-USAGE
+USAGE 
 
     % python reverse-complement.py -i 
     
