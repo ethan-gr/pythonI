@@ -6,7 +6,7 @@ VERSION
     1.0
     
 AUTHOR 
-	Ethan M. Galindo Raya
+	Ethan Marcos Galindo Raya
 	
     
 DESCRIPTION
