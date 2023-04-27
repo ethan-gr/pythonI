@@ -9,18 +9,24 @@ AUTHOR
 	Ethan Marcos Galindo Raya
 
 DESCRIPTION
+
+	Convert from raw to fasta format.
+	
 	It ask for a dna sequence in a txt file, ask for some data about and generate a fasta file whith the sequence
 
 CATEGORY
+
+	dna sequence
 	
 USAGE 
 
+	% py To_fasta_file.py
+
 '''
 
-# C:\Users\Ethan M Galindo Raya\Documents\CCG\2do_Semestre\Python\pythonI\projects\python\to_fasta_file\data\dna.txt
 # Message to the user
 print('Please, enter the archive rute wich contains the dna sequence:')
-# Recive sequence
+# Receive sequence
 rute = input()
 dna = open(rute).read()
 
@@ -28,9 +34,12 @@ dna = open(rute).read()
 print('Please, enter the expected output file name:')
 name_fasta = input()
 
-# Ask for the equence name
+# Ask for the sequence name
 print('Please, enter the sequence name:')
 sequence_name = input()
 
+# make the fastA format
 print(f"> {sequence_name}\n{dna}", file=open(f"{name_fasta}.fna", "w"))
 print(f"\nThe archive was saved as: {name_fasta}.fna")
+
+
