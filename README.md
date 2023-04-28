@@ -10,5 +10,9 @@ Este es de uso meramente academico y de aprendizaje.
 ## Descripción
 
 ## Licencia
+<<<<<<< Updated upstream
 
 [MIT] (LICENSE.md)
+=======
+[MIT](LICENSE.md)
+>>>>>>> Stashed changes
