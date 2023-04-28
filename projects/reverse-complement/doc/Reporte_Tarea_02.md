@@ -2,7 +2,7 @@
 
 - Lo primero que hice fue descargar los archivos correspondientes: `araC_gene_sequence.fna` y `araB_gene_sequence.fna`, para posteriormente trabajar con ellos.
 - Los situe en la carpeta `pythonI`.
-- Abrimos Git Bash y nos situamos en nuestro entorno de trabajo  es decir nuestro repositorio `pwd pythonI/`.
+- Abrimos Git Bash y nos situamos en nuestro entorno de trabajo  es decir nuestro repositorio `pythonI/`.
 - Situados en la rama `master` `pythonI` movemos los archivos a la carpeta `pythonI/projects/reverse-complement/data/`
 ```
 mv araB_gene_sequence.fna araC_gene_sequence.fna ./projects/reverse-complement/data/
@@ -11,14 +11,12 @@ mv araB_gene_sequence.fna araC_gene_sequence.fna ./projects/reverse-complement/d
 ```
 cd projects/reverse-complement/data/
 ```
-- Posteriormente son añadidos a los archivos controlados por git
+- Posteriormente lo añadimos a los archivos controlados por git
 ```
-git add araC_gene_sequence.fna
 git add araB_gene_sequence.fna
 ```
 - Se les hicieron commits correspondientes.
 ```
-git commit -m "Se añadio la secuencia de araC a la carpeta data" araC_gene_sequence.fna
 git commit -m "Se añadio la secuencia de araB a la carpeta data" araB_gene_sequence.fna
 ```
 - Posteriormente se uso el comando `git status` para revisar que todo fue realizado correctamente y nuestra rama detrabajo limpia.
@@ -58,10 +56,8 @@ mv araB_gene_sequence.fna araC_gene_sequence.fna ./projects/reverse-complement/d
 
 cd projects/reverse-complement/data/
 
-git add araC_gene_sequence.fna
 git add araB_gene_sequence.fna
 
-git commit -m "Se añadio la secuencia de araC a la carpeta data" araC_gene_sequence.fna
 git commit -m "Se añadio la secuencia de araB a la carpeta data" araB_gene_sequence.fna
 
 git status
