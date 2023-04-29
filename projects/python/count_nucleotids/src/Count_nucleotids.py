@@ -29,24 +29,8 @@ Gs = dna.count('G')
 
 # Messages with results
 if As+Ts+Gs+Cs != len(dna):
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    print('The sequence has an error in it, it only allows A, T, C and G as input')
+    raise ValueError(f'\nThe sequence has an error in it, it only allows A, T, C and G as input\
+                     \nand the sequence contains {len(dna)-(As+Ts+Gs+Cs)} Non-valid positions\n')
 else:
     print(f'The dna sequence has the following quantity of aminoacids:\n\
-            \tA: {As}\tT: {Ts}\tC: {Cs}\tG: {Gs}')
-=======
-    raise ValueError('The sequence has an error in it, it only allows A, T, C and G as input')
-else:
-    print(f'The dna sequence has the following quantity of aminoacids:\n\
-            \tA: {As}\tT: {Ts}\tC: {Cs}\tG: {Gs}')
-
-#if dna.count("N") > 0:
-#        raise ValueError(f'Sequence contains {dna.count("N")} N\'s')
->>>>>>> Stashed changes
-=======
-    print('The sequence has an error in it, it only allows A, T, C and G as input')
-else:
-    print(f'The dna sequence has the following quantity of aminoacids:\n\
-            \tA: {As}\tT: {Ts}\tC: {Cs}\tG: {Gs}')
->>>>>>> b9d98c9252a20a02d1afa9e32ea48d3d69510b42
+          \tA: {As}\tT: {Ts}\tC: {Cs}\tG: {Gs}')
