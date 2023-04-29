@@ -14,6 +14,7 @@ DESCRIPTION
 CATEGORY
 	
 USAGE 
+	% py To_fasta_file.py
 
 '''
 # Definitions
