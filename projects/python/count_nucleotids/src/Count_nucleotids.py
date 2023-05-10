@@ -16,10 +16,24 @@ CATEGORY
 USAGE 
 
 '''
-# Message to the user
-print('Please, enter the dna sequence:')
-# Recive sequence
-dna = input().upper()
+
+# IMPORTS
+import re  # Detection of sequence cases
+
+# Message to the user asking for the rute 
+print('Please, enter the rute that contains the dna sequence:')
+rute = input()
+dna =   open(rute).read()
+
+# we identify if is fastA to make proper changes
+dna = dna.split('\n')
+if re.search(r'.fna$', rute):
+    dna = dna[1:]
+dna = ''.join(''.join(dna).split(' ')).upper()
+
+# Comprobation of correct sequence
+if re.search(r'[^ATCG]', dna) or dna == '':
+    raise ValueError(f'\nThe sequence has an error in it')
 
 # Count A, T, C, G
 As = dna.count('A')
@@ -28,9 +42,5 @@ Cs = dna.count('C')
 Gs = dna.count('G')
 
 # Messages with results
-if As+Ts+Gs+Cs != len(dna):
-    raise ValueError(f'\nThe sequence has an error in it, it only allows A, T, C and G as input\
-                     \nand the sequence contains {len(dna)-(As+Ts+Gs+Cs)} Non-valid positions\n')
-else:
-    print(f'The dna sequence has the following quantity of aminoacids:\n\
-          \tA: {As}\tT: {Ts}\tC: {Cs}\tG: {Gs}')
+print(f'The dna sequence has the following quantity of aminoacids:\n\
+    \tA: {As}\tT: {Ts}\tC: {Cs}\tG: {Gs}')
