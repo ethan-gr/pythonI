@@ -24,11 +24,18 @@ USAGE
 
 '''
 
-# Message to the user
-print('Please, enter the archive rute wich contains the dna sequence:')
-# Receive sequence
+# IMPORTS
+import re  # Detection of sequence cases
+
+# Message to the user asking for the rute 
+print('Please, enter the rute that contains the dna sequence:')
 rute = input()
-dna = open(rute).read()
+dna =   open(rute).read()
+dna = ''.join(''.join(dna.split('\n')).split(' ')).upper()
+
+# Comprobation of correct sequence
+if re.search(r'[^ATCG]', dna) or dna == '':
+    raise ValueError(f'\nThe sequence has an error in it')
 
 # Ask for the new file name
 print('Please, enter the expected output file name:')
@@ -39,7 +46,7 @@ print('Please, enter the sequence name:')
 sequence_name = input()
 
 # make the fastA format
-print(f"> {sequence_name}\n{dna}", file=open(f"{name_fasta}.fna", "w"))
+print(f"> {sequence_name}\n{dna}", file=open(f"./results/{name_fasta}.fna", "w"))
 print(f"\nThe archive was saved as: {name_fasta}.fna")
 
 
