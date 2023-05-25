@@ -27,7 +27,7 @@ print('VAMOS A JUGAR PIEDRA PAPEL O TIJERAS!\n\
 Para mas inforacion de las reglas del juego se sugiere \
 leer el archivo `README.md` en la documentación del programa\n\
 En este juego indicas tu movimiento con números de la siguiente manera\
-\n\n\tpiedra = 0\tpapel = 1\ttijeras = 2\n')
+\n\n\t0 = piedra\t1 = papel\t2 = tijeras\n')
 
 # This is an optional loop if the user want to play again
 restart = 'y'
