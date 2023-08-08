@@ -1,3 +1,4 @@
+#lcg 
 #### ¿Cómo es que funciona Git?
 Crea un repositorio que es la carpeta que lleva el seguimiento de los csambios que se registran en el codigo.
 Es una mala idea tener repositorios anidados dentro de

@@ -1,3 +1,4 @@
+#git #lcg 
 # pythonI
 ## Autor: Ethan Marcos Galindo Raya
 

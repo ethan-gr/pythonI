@@ -1,3 +1,4 @@
+#lcg #python
 ## INTRODUCTION
 This program is intended to tell the user the the start codon poosition in a dna secuence and show the transcript produced by start and stop codons.
 

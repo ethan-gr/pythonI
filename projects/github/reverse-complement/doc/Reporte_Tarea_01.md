@@ -1,3 +1,4 @@
+#lcg #python
 ## Metodología  
 
 - Lo primero que hice fue descargar el archivo correspondiente a la practica para posteriormente trabajar con el, así qu lo situe en la carpeta `pythonI`.

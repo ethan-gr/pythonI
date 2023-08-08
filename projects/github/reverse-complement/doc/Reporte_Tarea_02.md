@@ -1,3 +1,4 @@
+#lcg #python
 ## Metodología
 
 - Lo primero que hice fue descargar los archivos correspondientes: `araC_gene_sequence.fna` y `araB_gene_sequence.fna`, para posteriormente trabajar con ellos.

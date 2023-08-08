@@ -1,3 +1,4 @@
+#lcg #python
 ## INTRODUCTION
 This program is intended to show the nucleotids proportions of a sequence given by an archive.
 

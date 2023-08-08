@@ -1,3 +1,4 @@
+#lcg #python
 ## INTRODUCTION
 This program is intended to show the quantity of each nucleotids of a given sequence.
 

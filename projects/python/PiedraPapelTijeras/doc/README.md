@@ -1,3 +1,4 @@
+#lcg #python
 ## INTRODUCTION
 
 This program is intended to be a "rock, peper, scissors"

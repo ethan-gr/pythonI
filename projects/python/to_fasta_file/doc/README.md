@@ -1,3 +1,4 @@
+#lcg #python
 ## INTRODUCTION
 
 This program is intended to convert a raw format file to a fasta format.

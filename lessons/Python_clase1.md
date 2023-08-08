@@ -1,3 +1,4 @@
+#lcg 
 #### Premisas de inicio
 **¿Por qué es importante controlar versiones?**
 	_Para poder llevar un registro de las actualizaciones o mejoras de como va cambiando nuestro spsript._
