@@ -53,3 +53,5 @@ dna = input().upper()
 
 print(f"TAC se encuentra en la posicion {transcrit(dna, retrn='start')}\n\
       El transcrito es: {transcrit(dna)}")
+
+print('el programa termino')
