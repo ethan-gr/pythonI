@@ -1,4 +1,4 @@
-#git #lcg 
+# Este repositorio está bien pro 
 # pythonI
 ## Autor: Ethan Marcos Galindo Raya
 
