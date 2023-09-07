@@ -14,6 +14,7 @@ DESCRIPTION
 CATEGORY
 	
 USAGE 
+    % py Count_nucleotids.py
 
 '''
 

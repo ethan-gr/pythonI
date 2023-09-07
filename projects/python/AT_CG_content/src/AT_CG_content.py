@@ -13,7 +13,8 @@ DESCRIPTION
 
 CATEGORY
 	
-USAGE 
+USAGE
+    % py AT_CG_content.py
 
 '''
 

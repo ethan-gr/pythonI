@@ -7,7 +7,6 @@ VERSION
     
 AUTHOR 
 	Ethan Marcos Galindo Raya
-	
     
 DESCRIPTION
 	Make the reverse complement of DNA sequence

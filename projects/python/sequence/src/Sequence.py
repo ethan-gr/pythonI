@@ -15,7 +15,7 @@ DESCRIPTION
 CATEGORY
 	
 USAGE 
-	% py To_fasta_file.py
+	% py Sequence.py
 
 '''
 
