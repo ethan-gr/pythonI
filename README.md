@@ -1,4 +1,3 @@
-#git #lcg #biopython
 # pythonI
 ## Autor: Ethan Marcos Galindo Raya
 
@@ -9,3 +8,5 @@ Este es de uso meramente academico y de aprendizaje.
 ## Licencia
 [MIT](LICENSE.md)
 
+### Markdown Tags
+#lcg #python
