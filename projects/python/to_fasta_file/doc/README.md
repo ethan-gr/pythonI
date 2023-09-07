@@ -1,8 +1,9 @@
-#lcg #python
 ## INTRODUCTION
-
 This program is intended to convert a raw format file to a fasta format.
-It's use is meant for users that have a DNA sequence embedded within a raw file, and wish to set this into a Fasta (fna) file format .
+It's use is meant for users that have a DNA sequence embedded within a raw file, and wish to set this into a Fasta (fna) file format.
+
+### Markdown Tags
+#lcg #python
 
 ## METODOLOGY
 Here is explained the most important parts of the code.
@@ -12,7 +13,6 @@ And it's cases.
 It is only required to have Python installed
 
 ### Manage arguments
-
 - In order for the program to work it needs the arguments in the next order:
 	1. Path
 	2. Sequence name

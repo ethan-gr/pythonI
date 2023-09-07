@@ -1,20 +1,19 @@
-#lcg #python
 ## INTRODUCTION
-
 This program is intended to be a "rock, peper, scissors"
 In it you can play by choosing an option, then an npc randomly choose another option.
 And acording to the rules you win, lose or you're tie.
 After the result of the game it asks the user if wanna play again.
 
-## RULES
+### Markdown Tags
+#lcg #python
 
+## RULES
 The game "rock paper scissors" is a game in wich two oponents choose between the three options and the winner works according to a round hierarqui.
 In the next representation '>' means 'wins to'
 ... Rock > Scissors > Paper > Rock ...
 closing the loop, and is a tie if both choose the same.
 
 ## METODOLOGY
-
 Here is explained the most importants parts of the code.
 
 - First the ramdom library is imported to make the npc choice randomly
