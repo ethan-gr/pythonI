@@ -1,6 +1,6 @@
 '''
 NAME
-	To_fasta_file.py
+	to_fasta_file.py
     
 VERSION
     1.0
@@ -17,7 +17,7 @@ CATEGORY
 	
 USAGE 
 
-	% py To_fasta_file.py
+	% py to_fasta_file.py
     
     It is a program that runs in CL.
     Args:
