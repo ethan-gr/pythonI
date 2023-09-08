@@ -14,18 +14,30 @@ DESCRIPTION
 CATEGORY
 	
 USAGE
-    % py AT_CG_content.py
+    % py AT_CG_content.py <path>
 
 '''
 
 # IMPORTS
+import sys # Manage arguments
+import os # Manage arguments
 import re  # Detection of sequence cases
 
-# Message to the user asking for the rute 
-print('Please, enter the rute that contains the dna sequence:')
-rute = input()
-dna =   open(rute).read()
+#---------------------------------------------------------------
+# MANAGE ARGUMENTS
 
+args = sys.argv[1:]
+
+# PATH
+rute = args[0]
+# Check existence
+if not os.path.isfile(rute):
+    raise ValueError("\nDirection given doesn't exists or is not a file")
+
+#---------------------------------------------------------------
+# MAIN
+
+dna =   open(rute).read()
 # we identify if is fastA to make proper changes
 dna = dna.split('\n')
 if re.search(r'.fna$', rute):
