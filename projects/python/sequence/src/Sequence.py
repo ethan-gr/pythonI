@@ -9,17 +9,27 @@ AUTHOR
 	Ethan Marcos Galindo Raya
 
 DESCRIPTION
-	Tells the start codon poosition in a dna secuence and shows the transcript
+	Tells the start codon posicion in a dna secuence and shows the transcript
 	in a sequence given by the user
 
 CATEGORY
 	
 USAGE 
-	% py Sequence.py
+	% py Sequence.py <START CODON> <STOP CODON>
 
 '''
+# IMPORTS
+import sys # Manage arguments
 
-def transcrit(sequence, startCodon='TAC', stopCodon='ATT', retrn='transcrit'):
+#---------------------------------------------------------------
+# MANAGE ARGUMENTS
+
+args = sys.argv[1:]
+
+startCodon = args[0].upper()
+stopCodon = args[1].upper()
+
+def transcrit(sequence, startCodon, stopCodon, retrn='transcrit'):
 	'''
 	This function works with a sequence looking for the transcript by 
 	checking for the star and stop codon, it can return the transcrit 
@@ -48,10 +58,10 @@ def transcrit(sequence, startCodon='TAC', stopCodon='ATT', retrn='transcrit'):
 
 
 # Prints
-print('Ingresa una secuencia a la cual buscar el punto d inicio del transcrito tanto como el transcrito')
+print('Ingresa una secuencia a la cual buscar el transcrito')
 dna = input().upper()
 
-print(f"TAC se encuentra en la posicion {transcrit(dna, retrn='start')}\n\
-      El transcrito es: {transcrit(dna)}")
+print(f"TAC se encuentra en la posicion {transcrit(dna, startCodon, stopCodon, 'start')}\n\
+      El transcrito es: {transcrit(dna, startCodon, stopCodon)}")
 
 print('el programa ha terterminado')

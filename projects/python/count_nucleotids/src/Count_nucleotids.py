@@ -3,7 +3,7 @@ NAME
 	Count_nucleotids.py
     
 VERSION
-    1.0
+    1.1
     
 AUTHOR 
 	Ethan Marcos Galindo Raya
@@ -14,16 +14,28 @@ DESCRIPTION
 CATEGORY
 	
 USAGE 
-    % py Count_nucleotids.py
+    % py Count_nucleotids.py <path>
 
 '''
 
 # IMPORTS
+import sys # Manage arguments
+import os # Manage arguments
 import re  # Detection of sequence cases
 
-# Message to the user asking for the rute 
-print('Please, enter the rute that contains the dna sequence:')
-rute = input()
+#---------------------------------------------------------------
+# MANAGE ARGUMENTS
+
+args = sys.argv[1:]
+
+# PATH
+rute = args[0]
+# Check existence
+if not os.path.isfile(rute):
+    raise ValueError("\nDirection given doesn't exists or is not a file")
+
+#---------------------------------------------------------------
+# MAIN
 
 with open(rute) as dna_file:
 
