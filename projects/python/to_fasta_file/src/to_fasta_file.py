@@ -57,16 +57,16 @@ def isSupported(file_type):
 args = sys.argv[1:]
 
 # PATH
-rute = args[0]
+path = args[0]
 # Check existence
-if not os.path.isfile(rute):
+if not os.path.isfile(path):
     raise ValueError("\nDirection given doesn't exists or is not a file")
 
 # Folders, name and extention extracted
-rute_elements = re.findall(r'[^/,\.,\\]+', rute)
+path_elements = re.findall(r'[^/,\.,\\]+', path)
 
 # FILE TYPE
-file_type = rute_elements[-1]
+file_type = path_elements[-1]
 isSupported(file_type)
 
 # SEQUENCE NAME
@@ -76,14 +76,14 @@ except: raise ValueError("\nYou have to give the sequence name as second argumen
 # DESTINATION
 try: destination = args[2]
 except:
-    old_file_name = rute_elements[-2]
+    old_file_name = path_elements[-2]
     destination = f'./{old_file_name}.fna'
 
 #---------------------------------------------------------------
 
 # CONVERT THE FILE
 
-dna =   open(rute).read()
+dna =   open(path).read()
 dna = ''.join(''.join(dna.split('\n')).split(' ')).upper()
 
 # Comprobation of correct sequence
