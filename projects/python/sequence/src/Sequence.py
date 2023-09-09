@@ -15,7 +15,7 @@ DESCRIPTION
 CATEGORY
 	
 USAGE 
-	% py Sequence.py <START CODON> <STOP CODON>
+	% py Sequence.py <path> <START CODON> <STOP CODON>
 
 '''
 # IMPORTS
@@ -71,12 +71,12 @@ def transcrit(sequence, startCodon, stopCodon, retrn='transcrit'):
 	'''
 	# The search
 	start = sequence.find(startCodon)
-	stop = sequence.find(stopCodon)
+	stop = sequence[start:].find(stopCodon)
 	if start == None or stop == None:
 		raise ValueError('It is not posible to find the tarnscript due to codons ausense')
 
 	# Returns
-	if retrn == 'transcrit': return sequence[start:stop]
+	if retrn == 'transcrit': return sequence[start:start+stop]
 	elif retrn == 'start': return start
 	else: raise ValueError('The parameter retrn has is not in an acceptable parameter')
 
