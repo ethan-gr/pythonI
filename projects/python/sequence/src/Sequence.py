@@ -20,14 +20,38 @@ USAGE
 '''
 # IMPORTS
 import sys # Manage arguments
+import os # Manage arguments
+import re  # Detection of sequence cases
 
 #---------------------------------------------------------------
 # MANAGE ARGUMENTS
 
 args = sys.argv[1:]
 
-startCodon = args[0].upper()
-stopCodon = args[1].upper()
+# PATH
+path = args[0]
+# Check existence
+if not os.path.isfile(path):
+    raise ValueError("\nDirection given doesn't exists or is not a file")
+
+dna =   open(path).read()
+# we identify if is fastA to make proper changes
+dna = dna.split('\n')
+if re.search(r'.fna$', path):
+    dna = dna[1:]
+dna = ''.join(''.join(dna).split(' ')).upper()
+
+# Comprobation of correct sequence
+if re.search(r'[^ATCG]', dna) or dna == '':
+    raise ValueError(f'\nThe sequence has an error in it')
+
+
+# CODONS
+startCodon = args[1].upper()
+stopCodon = args[2].upper()
+
+#---------------------------------------------------------------
+# FUNCTIONS
 
 def transcrit(sequence, startCodon, stopCodon, retrn='transcrit'):
 	'''
@@ -57,11 +81,10 @@ def transcrit(sequence, startCodon, stopCodon, retrn='transcrit'):
 	else: raise ValueError('The parameter retrn has is not in an acceptable parameter')
 
 
-# Prints
-print('Ingresa una secuencia a la cual buscar el transcrito')
-dna = input().upper()
+#---------------------------------------------------------------
+# MAIN
 
-print(f"TAC se encuentra en la posicion {transcrit(dna, startCodon, stopCodon, 'start')}\n\
+print(f"{startCodon} se encuentra en la posicion {transcrit(dna, startCodon, stopCodon, 'start')}\n\
       El transcrito es: {transcrit(dna, startCodon, stopCodon)}")
 
 print('el programa ha terterminado')
