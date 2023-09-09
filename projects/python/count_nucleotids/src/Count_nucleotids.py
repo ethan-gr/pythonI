@@ -29,21 +29,21 @@ import re  # Detection of sequence cases
 args = sys.argv[1:]
 
 # PATH
-rute = args[0]
+path = args[0]
 # Check existence
-if not os.path.isfile(rute):
+if not os.path.isfile(path):
     raise ValueError("\nDirection given doesn't exists or is not a file")
 
 #---------------------------------------------------------------
 # MAIN
 
-with open(rute) as dna_file:
+with open(path) as dna_file:
 
     dna = dna_file.read()
 
     # we identify if is fastA to make proper changes
     dna = dna.split('\n')
-    if re.search(r'.fna$', rute):
+    if re.search(r'.fna$', path):
         dna = dna[1:]
     dna = ''.join(''.join(dna).split(' ')).upper()
 
